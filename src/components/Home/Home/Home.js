@@ -10,15 +10,15 @@ import Features from '../Features/Features';
 
 const Home = () => {
     return (
-        <div>
-            <Header></Header>
-            <Banner></Banner>
-            <Features></Features>
-            <About></About>
-            <Programs></Programs>
-            <Specialities></Specialities>
-            <Footer></Footer>
-        </div>
+        <>
+            <Header />
+            <Banner />
+            <Features />
+            <About />
+            <Programs />
+            <Specialities />
+            <Footer />
+        </>
     );
 };
 
