@@ -14,31 +14,31 @@ import {
 
 function App() {
   return (
-      <Router className="App">
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/classes">
-            <Classes></Classes>
-          </Route>
-          <Route path="/advanceGym">
-            <AdvanceGym></AdvanceGym>
-          </Route>
-          <Route path="/pricing">
-            <Pricing></Pricing>
-          </Route>
-          <Route path="/membership/:id">
-            <Membership></Membership>
-          </Route>
-          <Route path="*">
-            <NoMatch></NoMatch>
-          </Route>
-        </Switch>
-      </Router>
+    <Router className="App">
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/classes">
+          <Classes></Classes>
+        </Route>
+        <Route path="/advanceGym">
+          <AdvanceGym></AdvanceGym>
+        </Route>
+        <Route path="/pricing">
+          <Pricing></Pricing>
+        </Route>
+        <Route path="/membership/:id">
+          <Membership></Membership>
+        </Route>
+        <Route path="*">
+          <NoMatch></NoMatch>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -3,7 +3,7 @@ import './Feature.scss';
 
 const Feature = ({ item }) => {
     const { name, icon, image } = item;
-    const bgStyle = { 
+    const bgStyle = {
         backgroundImage: `url(${image})`,
         backgroundAttachment: 'scroll',
         backgroundPosition: 'top',
@@ -16,10 +16,10 @@ const Feature = ({ item }) => {
             <div style={bgStyle} className="feature text-center">
                 <div className="overlay"></div>
                 <div className="image-special d-flex justify-content-center align-items-center">
-                    <img className="img-fluid" src={icon} alt=""/>
+                    <img className="img-fluid" src={icon} alt="" />
                 </div>
                 <h1>{name}</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptate vitae architecto, aut iure perferendis.</p>
+                <p> "I work on a six day bodybuilding-style split. Five days for each individual muscle part, then the sixth day for a certain muscle group I'm trying to improve. If your shoulders need work.</p>
             </div>
         </div>
     );

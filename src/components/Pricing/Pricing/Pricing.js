@@ -5,7 +5,7 @@ import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
 import PricingCard from '../PricingCard/PricingCard';
 import './Pricing.scss';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 const Pricing = ({ pricingList, fetchPricingPlan }) => {
     useEffect(() => {
@@ -14,13 +14,13 @@ const Pricing = ({ pricingList, fetchPricingPlan }) => {
 
     return (
         <div>
-            <Header></Header>
-            <Banner></Banner>
+            <Header />
+            <Banner />
             <div className="container">
                 <div className="row mt-5 mb-5">
                     <div className="text-center w-100 mb-3">
                         <h1 className="pricing-title"><span className="special">Choose the offer</span> that suits you</h1>
-                        <p style={{ width: '500px', margin: '0 auto'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus temporibus aliquid veritatis iusto fuga porro.</p>
+                        <p style={{ width: '500px', margin: '0 auto' }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus temporibus aliquid veritatis iusto fuga porro.</p>
                     </div>
                     {
                         pricingList.map(item => {
@@ -33,7 +33,7 @@ const Pricing = ({ pricingList, fetchPricingPlan }) => {
                     }
                 </div>
             </div>
-            <Footer></Footer>
+            <Footer />
         </div>
     );
 };
@@ -45,7 +45,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return{
+    return {
         fetchPricingPlan: () => dispatch(fetchPricingPlan()),
     }
 }
